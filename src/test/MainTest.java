@@ -9,7 +9,7 @@ class MainTest {
 
     @Test
     public void countUniqueWords() {
-        assertEquals(7, Main.countUniqueWords("How English palindromes differ from Russian palindromes"));
+        assertEquals(7, Main.countUniqueWords("  How English palindromes differ from Russian palindromes"));
         assertEquals(7, Main.countUniqueWords("How, English, palindromes ,differ - from ,Russian - palindromes"));
         assertEquals(0, Main.countUniqueWords(null));
         assertEquals(0, Main.countUniqueWords(""));

@@ -2,19 +2,7 @@ package main;
 
 /**
  * 1. Проверить, является ли переданный объект палиндромом или нет.
- * test:
- * mom
- * eye
- * level
- * radar
- * Do geese see God?
- * A man, a plan, a canal: Panama
- * <p>
  * 2. Посчитать количество уникальных слов в тексте.
- * test:
- * The difference between palindromic words and palindromic phrases => 8
- * How English palindromes differ from Russian palindromes => 7
- *
  */
 
 // Assumption 1: we get 1 String that contains text with several words
@@ -32,7 +20,7 @@ public class Main {
     public static int countUniqueWords(String text) { // todo we can use long here, but i don't see any sense in that
         if (text == null || text.isBlank()) return 0;
 
-        String[] words = text.split(" ");
+        String[] words = text.trim().split(" ");
         int howManyWordsToDelete = 0;
 
         for (int i = 0; i < words.length; i++) {
