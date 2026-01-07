@@ -17,7 +17,7 @@ public class Main {
         System.out.println(isPalindrome("eye"));
     }
 
-    public static int countUniqueWords(String text) { // todo we can use long here, but i don't see any sense in that
+    public static int countUniqueWords(String text) {
         if (text == null || text.isBlank()) return 0;
 
         String[] words = text.trim().split(" ");
